@@ -22,7 +22,7 @@ searchform.addEventListener("submit", function (eve) {
 async function fetchAPI(searchQ) 
 {
   // The api link to call the data and converting to JSON file
-  const ApiUrl = `https://api.edamam.com/api/recipes/v2?type=public&q=${searchQ}&app_id=94b061a8&app_key=78ee673f8aeb70f64462f670862c24eb&to=20`;
+  const ApiUrl = = `https://api.edamam.com/api/recipes/v2?type=public&q=${encodeURIComponent(searchQ)}&app_id=94b061a8&app_key=78ee673f8aeb70f64462f670862c24eb`;
   const res = await fetch(ApiUrl);
   const data = await res.json();
   console.log(data);
