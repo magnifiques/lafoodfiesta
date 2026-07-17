@@ -6,7 +6,7 @@ const slogan = document.querySelector(".slogans");
 let searchQuery = "";
 
 const APP_ID = "94b061a8";
-const APP_KEY = "78ee673f8aeb70f64462f670862c24eb";
+const APP_KEY = "ff6c532aecfbfcc02af8570ed5bd7f42";
 
 // initiate the search result 
 searchform.addEventListener("submit", function (eve) {
